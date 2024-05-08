@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  
+ 
+}
+
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+  height: 50%;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.product .description {
+  margin-top: 10px;
+}
+
+.product .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.product button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+.availability {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.rating {
+  margin-top: 10px;
+  color: #ffd700; /* gold */
+}
+#category {
+  font-size: 1.1rem;
+  color: #6c757d; 
+  margin-top: 5px;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;  
+}
+
+
+</style>
+<body>
+  <header>
+    <div class="container">
+      <h1>Product Listings</h1>
+    </div>
+    </div>
+  </header>
+  <main>
+    <div>
+        <select name="category" id="category">
+            <option value="">Select Category</option>
+            <option value="organic">Organic Farming</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="dairy">Dairy</option>
+          </select>
+    </div>
+    <div class="container">
+        
+      <div class="product">
+        <img src="product1.jpg" alt="">
+        <h2>Product 1</h2>
+        <p class="description">.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+        <div class="availability">In Stock</div>
+        <div class="rating">Rating: 4.5</div>
+      </div>
+      <div class="product">
+        <img src="" alt="">
+        <h2>Maize</h2>
+        <p class="description">.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+        <div class="availability">In Stock</div>
+        <div class="rating">Rating: 4.5</div>
+      </div>
+      <div class="product">
+        <img src="product1.jpg" alt="">
+        <h2>Product 1</h2>
+        <p class="description">e.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+        <div class="availability">In Stock</div>
+        <div class="rating">Rating: 4.5</div>
+      </div>
+      <div class="product">
+        <img src="" alt="">
+        <h2>Maize</h2>
+        <p class="description">.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+        <div class="availability">In Stock</div>
+        <div class="rating">Rating: 4.5</div>
+      </div>
+      <div class="product">
+        <img src="" alt="">
+        <h2>Maize</h2>
+        <p class="description">.</p>
+        <p class="price">$19.99</p>
+        <button>Add to Cart</button>
+        <div class="availability">In Stock</div>
+        <div class="rating">Rating: 4.5</div>
+      </div>
+      
+     
+      <!-- Add more product listings here -->
+    </div>
+  </main>
+  <footer>
+    <div></div>
+    <div class="container">
+      <p>&copy; 2024 Product Listings. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
